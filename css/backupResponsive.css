@@ -1,0 +1,29 @@
+.tagCloud li{
+	font-size: 4rem;
+	height: 5rem;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+	line-height: 5rem;
+}
+
+#onclickMenuBar{
+display: inline-block;
+width: 40%;
+background-color: #43658b;
+position: fixed;
+right: 0;
+font-size: 2rem;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #fda37263;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 	4;
+
+}

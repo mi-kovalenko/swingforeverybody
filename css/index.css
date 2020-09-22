@@ -1,0 +1,132 @@
+header {
+	position: relative;
+}
+
+.mainHeader {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  transform: translate(0, 50%);
+  width: 100%;
+  color: wheat;
+  text-align: center;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 13px;
+  }
+
+.mainPic img {
+	width: 100%;
+	display: block;
+}
+
+.stylesSection {
+  padding: 40px 0;
+  background-color: #4e89ae;
+}
+
+.stylesHeader h2 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+.stylesContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #4e89ae;
+}
+
+.stylesBit {
+	width: 95%;
+}
+
+.stylesBit img {
+	width: 100%;
+	border-radius: 50%;
+	border: 5px solid;
+  border-color: rgb(255 255 255 / 25%);
+}
+
+.stylesBit figcaption {
+	text-align: center;
+	color: #ffffff;
+}
+
+.mainInfo {
+	padding: 10px;
+	background-color: #ed6663;
+}
+
+.mainInfo h2 {
+	margin: 0;
+	margin-top: 10px; 
+}
+
+.linkStart {
+	display: flex;
+	justify-content: center;
+	background-color: #ed6663;
+}
+
+.linkStart a {
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+@media screen and (min-width: 700px) {
+  .stylesBit{
+    width: 46%;
+	}
+
+	.mainInfoItem {	
+		margin: 0 30px;
+		transition-duration: 0.5s;
+	}
+
+	.mainInfoItem:hover {
+		transform: translateX(-20px);
+		transition-duration: 0.5s;
+	}
+}
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .stylesBit {
+	 width: 25%;
+  }
+
+  .mainInfoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+  }
+
+  .mainInfoList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ol {
+	 list-style-type: none;
+  }
+  .mainInfoItem{	
+  	width: 25%;
+  	margin: 0 30px;
+  	transition-duration: 0.5s;
+  }
+  .mainInfoItem:hover{
+  	transform: translateY(-20px);
+  	transition-duration: 0.5s;
+  }
+}
