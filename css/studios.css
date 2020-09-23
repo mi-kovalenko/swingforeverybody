@@ -30,6 +30,7 @@ header {
 	top: 0;
 	left: 0;
 	padding:20px;
+  z-index: 100;
 }
 
 .header {
@@ -96,7 +97,7 @@ nav {
 }
 
 .studioBit {
-	padding: 3px;
+	padding: 10px;
 	margin: 2px;
 	background-color: #ed6663bd;
 	box-sizing: border-box;
@@ -104,19 +105,57 @@ nav {
 	flex-direction: column;
 	margin-bottom: 20px;
 	width: 95%;
+  z-index: 10;
 }
 
 .studioBit img {
 	width: 100%;
 }
 
+.studioBit{
+  position: relative;
+}
 
+.studioBit .hover {
+  position: absolute;
+  transform: translate(-10px, -10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fdbe9c;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.hoverInner {
+  width: 80%;
+  height: 80%;
+  border: 3px groove #00000024;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.hoverInner a{
+  text-align: center;
+  color: #000000;
+}
+
+.hover:active: {
+  opacity: 1;
+}
+
+.hover:focus {
+  opacity: 1;
+}
 
 
 /*-------styles for "events" page ---------*/
 
 .headerEvents {
 	padding-left: 20px;
+  padding-bottom: 20px; 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -204,6 +243,12 @@ ul {
 .monthRow {
 	padding: 10px;
 	padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 0;
+}
+
+.monthRow h2 {
+  margin-top: 10px;
 }
 
 .monthEventsRow {
@@ -215,6 +260,7 @@ ul {
 
 .monthEventsIcon {
 	height: 35px;
+  padding: 0 20px;
 }
 
 .monthEvents li {
@@ -248,13 +294,6 @@ footer {
  text-decoration: none;
  }
 
-.hover {
-
-}
-
-.hover {
-  display: none;
-}
 
 
 
@@ -345,6 +384,11 @@ footer {
 		box-sizing: border-box;
 	}
 
+  .hover:hover {
+    opacity: 1;
+  }
+
+
 /*events page styling*/
 
 
@@ -352,8 +396,6 @@ footer {
 
 /*--------------------*/
 
-/*footer{
-height: 80px;
-}*/
+
 
 }

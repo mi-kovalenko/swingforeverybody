@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/studios.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/studios_fail.css"> -->
 </head>
 <body>
 	<div class="superContainer">
@@ -18,20 +19,44 @@
 		<div class="header">
 			<h1 class="header1">SUR</h1>
 			<h1 class="header2">SwingUnitedRussia</h1>
-			<svg class="menuButton" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg>
-			<nav>
-			
-			<a href="index.html" >home</a>
-			<a href="studios.html" class="current">studios</a>
-			<a href="events.html" >events</a>
-		</nav>
+			 <svg class="menuButton" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg>
+			<nav id="dropdownMenu">
+  			<a href="index.html" >home</a>
+  			<a href="studios.html" class="current">studios</a>
+  			<a href="events.html" >events</a>
+		  </nav>
 		</div>
+
+
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("dropdownMenu").classList.toggle("show")
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content")
+    var i
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i]
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show')
+      }
+    }
+  }
+}
+</script>
+fafa
+
 	</header>
-		<nav class="onclickMenuBar">
-			<a href="index.html" >home</a>
-			<a href="studios.html" class="current">studios</a>
-			<a href="events.html" >events</a>
-		</nav>
+	<nav class="onclickMenuBar">
+		<a href="index.html" >home</a>
+		<a href="studios.html" class="current">studios</a>
+		<a href="events.html" >events</a>
+	</nav>
 	
 <main>
 	<div class="superContainer">
@@ -44,57 +69,76 @@
 		</div>
 		<div class="studioContainer">
 			<div class="studioBit">
-			<h2>SwingSchool</h2>
-			<p>city, whereabouts, little info</p>
-			<img src="https://www.swing.school/img/uploads/header/31-2000.jpg" alt="">
-			<div class="hover">
-				<p>more info</p>
-				<a href=""></a>
-			</div>
-		</div>
+        <div class="hover" tabindex="1">
+          <div class="hoverInner">
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+            <a href="https://www.swing.school/">See their webpage and meet the people</a>
+          </div>
+        </div>
+  			<h2>SwingSchool</h2>
+  			<p>city, whereabouts, little info</p>
+  			<img src="https://www.swing.school/img/uploads/header/31-2000.jpg" alt="">		
+		  </div>
 
-		<div class="studioBit">
-			<h2>MSDC</h2>
-			<p> city, little bit about them</p>
-			<img src="https://www.tantsklass.ru/wp-content/uploads/Marina-Valya-1-300x300.jpg" alt="">
-			<div class="hover">
-				<p>more info</p>
-				<a href=""></a>
-			</div>
-		</div>
+		  <div class="studioBit">
+  			<h2>MSDC</h2>
+  			<p> city, little bit about them</p>
+  			<img src="https://www.tantsklass.ru/wp-content/uploads/Marina-Valya-1-300x300.jpg" alt="">
+  			<div class="hover" tabindex="2">
+  				<div class="hoverInner">
+            <p>Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.  </p><br>
+            <a href="https://msds.ru/">See their webpage and meet the people</a>
+          </div>
+  			</div>
+		  </div>
 
-		<div class="studioBit">
-			<h2>SummerTimeSwing</h2>
-			<p>city, whereabouts, little info</p>
-			<img src="https://www.tantsklass.ru/wp-content/uploads/10368936_717546714955350_868561509447905832_o-300x300.jpg" alt="">
-			<div class="hover">
-				<p>more info</p>
-				<a href=""></a>
-			</div>
-		</div>
+		  <div class="studioBit">
+  			<h2>SummerTimeSwing</h2>
+  			<p>city, whereabouts, little info</p>
+  			<img src="https://www.tantsklass.ru/wp-content/uploads/10368936_717546714955350_868561509447905832_o-300x300.jpg" alt="">
+  			<div class="hover" tabindex="3">
+          <div class="hoverInner">
+    				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p>
+    				<a href="https://www.summertimeswing.com/">See their webpage and meet the people</a>
+          </div>
+  			</div>
+		  </div>
 
-		<div class="studioBit">
-			<h2>DancingCompany</h2>
-			<p>city, whereabouts, little info</p>
-			<img src="img/ACL_2702-770x400.jpg" alt="">
-			<div class="hover">
-				<p>more info</p>
-				<a href=""></a>
-			</div>
-		</div>
+  		<div class="studioBit">
+  			<h2>DancingCompany</h2>
+  			<p>city, whereabouts, little info</p>
+  			<img src="img/ACL_2702-770x400.jpg" alt="">
+  			<div class="hover" tabindex="4">
+  				<div class="hoverInner">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+            <a href="http://www.dancing-company.ru/">See their webpage and meet the people</a>
+          </div>
+  			</div>
+  		</div>
 
-		<div class="studioBit">
-			<h2>Jumpin' Jive</h2>
-			<p>city, whereabouts, little info</p>
-			<img src="img/jumpinjive.jpg" alt="">
-			<div class="hover">
-				<p>more info</p>
-				<a href=""></a>
-			</div>
-		</div>
-	</div>
-</div>
-
+  		<div class="studioBit">
+  			<h2>Jumpin' Jive</h2>
+  			<p>city, whereabouts, little info</p>
+  			<img src="img/jumpinjive.jpg" alt="">
+  			<div class="hover" tabindex="5">
+  				<div class="hoverInner">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p><br>
+            <a href="https://www.facebook.com/jumpin.jive.TSDC/">See their webpage and meet the people</a>
+          </div>
+  			</div>
+  		</div>
+	   </div>
+    </div>
 </main>
 </div>
 <footer>

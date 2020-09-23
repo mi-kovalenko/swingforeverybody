@@ -2,33 +2,45 @@ header {
 	position: relative;
 }
 
+.superContainer {
+  background-color: #4e8aaf;
+}
+
 .mainHeader {
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  transform: translate(0, 50%);
+  display: flex;
+  justify-content: center;
   width: 100%;
   color: wheat;
   text-align: center;
   padding: 10px 10px;
-  box-sizing: border-box;
-  background-color: rgba(0,0,0,0.5);
-  font-size: 13px;
-  }
+  padding-bottom: 0;
+  box-sizing: border-box;/*#080504 dark gray*/;
+}
+  
+.mainHeader h1 {
+  transform: translateY(-61%);
+  width: 60%;
+  padding: 20px 100px;
+  background-color: #9e1a1ad6;
+  font-size: 2rem;
+  border-radius: 10px;
+}
 
 .mainPic img {
 	width: 100%;
 	display: block;
+  object-fit: cover;
 }
 
 .stylesSection {
   padding: 40px 0;
+  padding-top: 0;
   background-color: #4e89ae;
 }
 
 .stylesHeader h2 {
 	margin: 0;
-	padding: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
@@ -57,14 +69,24 @@ header {
 }
 
 .mainInfo {
-	padding: 10px;
+	padding: 40px 10px 10px;
 	background-color: #ed6663;
+
 }
 
 .mainInfo h2 {
 	margin: 0;
 	margin-top: 10px; 
 }
+
+.mainInfoItem { 
+    transition-duration: 0.5s;
+  }
+
+.mainInfoItem:active {
+    transform: translateX(-20px);
+    transition-duration: 0.5s;
+  }
 
 .linkStart {
 	display: flex;
@@ -75,11 +97,45 @@ header {
 .linkStart a {
 	text-decoration: none;
 	color: #000000;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  padding: 10px 60px;
+  margin-bottom: 25px;
+  scroll-behavior: smooth;
 }
 
 
 
+
+
 @media screen and (min-width: 700px) {
+  
+  .mainHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #4e89ae /*#080504 dark gray*/;
+  }
+  
+  .mainHeader h1 {
+    transform: translateY(-61%);
+    width: 60%;
+    padding: 20px 100px;
+    background-color: #9e1a1ad6;
+    font-size: 3rem;
+    border-radius: 10px;
+  }
+
+  .stylesHeader h2 {
+    font-size: 2.5rem;
+  }
+  .stylesSection {
+    padding: 40px 0;
+    padding-top: 0;
+    background-color: #4e89ae;
+    transform: translateY(-60px);
+  }
+
   .stylesBit{
     width: 46%;
 	}
@@ -100,8 +156,15 @@ header {
 
 
 @media screen and (min-width: 1024px) {
+  
   .stylesBit {
-	 width: 25%;
+	  width: 25%;
+  }
+
+  .mainHeader h1 {
+    transform: translateY(-61%);
+    width: 60%;
+    padding: 50px 100px;
   }
 
   .mainInfoHeader {
