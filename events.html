@@ -17,7 +17,7 @@
 		<div class="header">
 			<h1 class="header1">SUR</h1>
 			<h1 class="header2">SwingUnitedRussia</h1>
-			<svg onclick="dropdownMenu()" class="menuButton" tabindex="1" aria-label="dropdown menu" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg>
+			<button aria-label="dropdown menu"><svg onclick="dropdownMenu()" class="menuButton" tabindex="1" aria-label="dropdown menu" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg></button>
 			<nav>
 			<a href="index.html">home</a>
 			<a href="studios.html">studios</a>
@@ -46,10 +46,12 @@
 	<div id="showFilter" class="filterSearch">
 		<div class="filters">
 			<h2>Date</h2>
-			<label for="from" aria-label="pick a date from">From:
-			<input type="date" name="" placeholder="pick a day"></label>
-			<label for="to" aria-label="pick a date to">To:
-			<input type="date" name="" placeholder="pick a day"></label>
+      <form>
+  			<label for="from" aria-label="pick a date from">From:</label>
+  			<input id="from" type="date" name="from" placeholder="pick a day">
+  			<label for="to" aria-label="pick a date to">To:</label>
+  			<input id="to" type="date" name="to" placeholder="pick a day">
+      </form>
 		</div>
 		<div class="filters">
 			<h2>Tag Cloud</h2>
