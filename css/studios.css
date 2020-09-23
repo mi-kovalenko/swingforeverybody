@@ -60,14 +60,19 @@ nav {
 }
 
 .onclickMenuBar {
+  display: none;
+}
+
+.onclickMenuBarActive {
 	display: inline-block;
 	background-color: #43658b;
 	position: fixed;
 	right: 0;
 	top: 91px;
+  z-index: 20;
 }
 
-.onclickMenuBar a {
+.onclickMenuBarActive a {
 	display: block;
 	text-decoration: none;
 	color: #000000;
@@ -76,11 +81,9 @@ nav {
 	font-size: 1.5rem;
 }
 
-.onclickMenuBar {
-	display: none;
-}
 
-.onclickMenuBar .current {
+
+.onclickMenuBarActive .current {
 	color: #ffffff;
 }
 
@@ -184,6 +187,11 @@ width: 51px;
 }
 
 .filterSearch {
+  display: none;
+}
+
+
+.filterSearchActive {
 	display: block;
 	background-color: #ffa372;
 	position: fixed;
@@ -192,7 +200,7 @@ width: 51px;
 	padding: 0 20px;
 }
 
-.filterSearch h2 {
+.filterSearchActive h2 {
 	margin: 0; 
 	margin-bottom: 10px;
 }
@@ -234,10 +242,6 @@ ul {
 
 .iconKey {
 	width: 50px;
-}
-
-.filterSearch {
-	display: none;
 }
 
 .monthRow {

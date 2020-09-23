@@ -17,7 +17,7 @@
 		<div class="header">
 			<h1 class="header1">SUR</h1>
 			<h1 class="header2">SwingUnitedRussia</h1>
-			<svg class="menuButton" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg>
+			<svg onclick="dropdownMenu()" class="menuButton" height="51" viewBox="0 -53 384 384" width="51" xmlns="http://www.w3.org/2000/svg"><path d="M368 155H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 32H16a16 16 0 010-32h352a16 16 0 010 32zm0 0M368 277H16a16 16 0 010-32h352a16 16 0 010 32zm0 0"/></svg>
 			<nav>
 			<a href="index.html">home</a>
 			<a href="studios.html">studios</a>
@@ -25,7 +25,7 @@
 		</nav>
 		</div>
 	</header>
-	<nav class="onclickMenuBar">
+	<nav id="showMenu" class="onclickMenuBar">
 			<a href="index.html">home</a>
 			<a href="studios.html">studios</a>
 			<a href="events.html" class="current">events</a>
@@ -34,14 +34,16 @@
 
 	<div class="headerEvents"> 
 		<h1>Events</h1>
-		<div class="filterButton" aria-label="filterButton">
+		<div onclick="showFilterSearch()" class="filterButton" aria-label="filterButton">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -50 600 600"><path d="M383 227L164 8c-5-5-12-8-19-8s-14 3-19 8l-16 16a27 27 0 000 38l183 184-184 184a27 27 0 000 38l16 16c6 5 12 8 19 8s14-3 20-8l219-219a27 27 0 000-38z"/></svg>
 		</div>
 	</div>
 
+  
+
 	<!-- embedded google calendar or maps? -->
 
-	<div class="filterSearch">
+	<div id="showFilter" class="filterSearch">
 		<div class="filters">
 			<h2>Date</h2>
 			<label for="from">From:</label>
@@ -161,5 +163,13 @@
 		</a>
 	</p>
 </footer>
+<script>
+  function dropdownMenu() {
+  document.getElementById("showMenu").classList.toggle("onclickMenuBarActive");
+}
+function showFilterSearch() {
+  document.getElementById("showFilter").classList.toggle("filterSearchActive");
+}
+</script>
 </body>
 </html>
