@@ -24,6 +24,11 @@ body {
 	font-size: 1.125rem;
 }
 
+button {
+  border: none;
+  background-color: rgba(255,255,255, 0%)  ;
+}
+
 header {
 	background-color: #43658b;
 	position: sticky;
@@ -354,7 +359,7 @@ footer {
 		border-top: solid 1px #000000;
 	}
 
-	.onclickMenuBarActive {
+	.onclickMenuBar {
 	  display: none;
 	}
 	.current {
