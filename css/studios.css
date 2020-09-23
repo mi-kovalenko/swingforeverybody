@@ -354,7 +354,7 @@ footer {
 		border-top: solid 1px #000000;
 	}
 
-	.onclickMenuBar {
+	.onclickMenuBarActive {
 	  display: none;
 	}
 	.current {
