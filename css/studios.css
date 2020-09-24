@@ -27,6 +27,11 @@ body {
 button {
   border: none;
   background-color: rgba(255,255,255, 0%)  ;
+  outline: none;
+}
+
+div{
+  outline: none;
 }
 
 header {
@@ -71,7 +76,7 @@ nav {
 .onclickMenuBarActive {
 	display: inline-block;
 	background-color: #43658b;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 91px;
   z-index: 20;
@@ -289,6 +294,18 @@ ul {
   background-color: #ece7e7e3;
 }
 
+.googleCalendar {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.googleCalendar iframe {
+  min-width: 320px;
+  width: device-width;
+  min-height: 400px;
+  margin-bottom: 40px; 
+}
 /*------------------------*/
 
 footer {
@@ -338,6 +355,12 @@ footer {
 	.studioBit img {
 	  width: 100%;	
 	}
+
+  /*---------events--------*/
+  .googleCalendar iframe {
+  min-width: 600px;
+  width: device-width;
+  }
 }
 
 
@@ -400,7 +423,10 @@ footer {
 
 /*events page styling*/
 
-
+  .googleCalendar iframe {
+    min-width: 800px;
+    width: device-width;
+    }
 
 
 /*--------------------*/
