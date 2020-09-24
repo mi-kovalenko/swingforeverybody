@@ -43,14 +43,18 @@ header {
   z-index: 100;
 }
 
+h1 {
+  margin: 0;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-h1 {
-	margin: 0;
+.header h1 {
+  color: #ffffff;
 }
 
 .studioBit h2 {
@@ -85,16 +89,18 @@ nav {
 .onclickMenuBarActive a {
 	display: block;
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
 	padding: 25px 60px;
-	border-top: 1px solid #000000;
+	border-top: 1px solid #ffe476;
 	font-size: 1.5rem;
 }
 
 
 
 .onclickMenuBarActive .current {
-	color: #ffffff;
+    color: #ffe476;
+    text-shadow: yellow;
+    text-shadow: 2px 2px 5px red;
 }
 
 .intro {
@@ -317,16 +323,17 @@ justify-content: center;
 }
 /*------------------------*/
 
-footer {
- background-color: #43658b;
- padding: 1% 3%; 
- text-align: right;
- flex: 1;
-}
+  footer {
+    color: #ffe476;
+    background-color: #43658b;
+    padding: 1% 3%; 
+    text-align: right;
+    flex: 1;
+  }
 
  footer a {
- color: #000000;
- text-decoration: none;
+   color: #ffe476;
+   text-decoration: none;
  }
 
 
@@ -384,19 +391,21 @@ footer {
 
 	nav a {
 		background-color: #43658b;
-		color: #000000;
+		color: #ffffff;
 		display: flex;
 		text-decoration: none;
 		padding: 10px;
-		border-top: solid 1px #000000;
+		border-top: solid 1px #ffffff;
 	}
 
 	.onclickMenuBar {
 	  display: none;
 	}
 	.current {
-		color: #ffffff;
-		border-top-color: #ffffff;
+		color: #ffe476;
+    text-shadow: yellow;
+    text-shadow: 2px 2px 5px red;
+		border-top-color: #ffe476;
 	}
 
 /*---studios page styling---*/
