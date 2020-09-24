@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
 	<title>sur</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Work+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><body>
-   	<link rel="stylesheet" type="text/css" href="css/studios.css">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Work+Sans&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/studios.css">
 </head>
-
+<body>
 	<div class="superContainer">
 	<header>
 		<div class="header">
@@ -23,7 +23,7 @@
 			<a href="studios.html">studios</a>
 			<a href="events.html" class="current">events</a>
 		</nav>
-		</div>
+		</div> 
 	</header>
 	<nav id="showMenu" class="onclickMenuBar">
 			<a href="index.html">home</a>
@@ -31,26 +31,26 @@
 			<a href="events.html" class="current">events</a>
 	</nav>
 <main>
-
-	<div class="headerEvents"> 
+	<div class="headerEvents"> <!-- headerEventa -->
 		<h1>Events</h1>
-		<div onclick="showFilterSearch()" class="filterButton" aria-label="filterButton">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -50 600 600"><path d="M383 227L164 8c-5-5-12-8-19-8s-14 3-19 8l-16 16a27 27 0 000 38l183 184-184 184a27 27 0 000 38l16 16c6 5 12 8 19 8s14-3 20-8l219-219a27 27 0 000-38z"/></svg>
-		</div>
-	</div>
+		<!-- <div class="filterButton"> --> <!-- filterButton -->
+      <button class="filterButton" onclick="showFilterSearch()" aria-label="filterButton">
+			<svg width="" height="" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40.25 23.0834L22 4.83335C21.5833 4.41669 21 4.16669 20.4167 4.16669C19.8333 4.16669 19.25 4.41669 18.8333 4.83335L17.5 6.16669C17.0827 6.58801 16.8486 7.15703 16.8486 7.75002C16.8486 8.34302 17.0827 8.91203 17.5 9.33335L32.75 24.6667L17.4167 40C16.9994 40.4213 16.7653 40.9904 16.7653 41.5834C16.7653 42.1763 16.9994 42.7454 17.4167 43.1667L18.75 44.5C19.25 44.9167 19.75 45.1667 20.3333 45.1667C20.9167 45.1667 21.5 44.9167 22 44.5L40.25 26.25C40.6673 25.8287 40.9014 25.2597 40.9014 24.6667C40.9014 24.0737 40.6673 23.5047 40.25 23.0834V23.0834Z" fill="black"/>
+</svg>
 
-  
-
-	<!-- embedded google calendar or maps? -->
+		</button>
+    <!-- </div> filterButton -->
+	</div> <!-- headerEvents -->
 
 	<div id="showFilter" class="filterSearch">
 		<div class="filters">
 			<h2>Date</h2>
       <form>
   			<label for="from" aria-label="pick a date from">From:</label>
-  			<input id="from" type="date" name="from" placeholder="pick a day">
+  			<input id="from" type="date" name="from">
   			<label for="to" aria-label="pick a date to">To:</label>
-  			<input id="to" type="date" name="to" placeholder="pick a day">
+  			<input id="to" type="date" name="to">
       </form>
 		</div>
 		<div class="filters">
@@ -143,17 +143,17 @@
 							</div>
 						</div>
 						</li>
-						<!-- </div> по-моему, он тут лишний-->
+						<!-- </div>  <--по-моему, он тут лишний-->
 				</ul>
 			</div>
 		</div>
 	</div>
 	
-</div>
-<div class="googleCalendar">
-  <iframe src="https://calendar.google.com/calendar/embed?src=sm4sgs2v5u3q3md6uft5e6dlo0%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" height="500" frameborder="0" scrolling="no"></iframe>
-</div>
+<!-- </div> лишний? -->
 </main>
+<div class="googleCalendar">
+  <iframe src="https://calendar.google.com/calendar/embed?src=sm4sgs2v5u3q3md6uft5e6dlo0%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" height="500"></iframe>
+</div>
 <footer>
 	<p>
 		Created by Mario. Moscow 2020. Contact me: 
@@ -173,5 +173,6 @@ function showFilterSearch() {
   document.getElementById("showFilter").classList.toggle("filterSearchActive");
 }
 </script>
+</div>
 </body>
 </html>

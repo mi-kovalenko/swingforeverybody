@@ -173,28 +173,37 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+  box-sizing: border-box;
 }
 
-.filterButton {
-	background-color: #ed6663;
-	width: 50px;
-	height: 50px;
-	border-radius: 0 0 0 5px;
-	transition: width 0.5s;
+/*.filterButton {
+  transform: translateX(-20px);
+}*/
+
+
+.filterButton  {
+width: 50px;
+  height: 50px;
+  background-color: #ed6663;
+  
+  border-radius: 0 0 0 5px;
+  transition: width 0.5s;
 }
 
 .filterButton:hover {
 	width: 70px;
-	transition: width 0.5s;
+	transition: all 0.5s ease;
 }
 
-.filterButton svg {
-  width: 51px;
-}
+/*.filterButton svg {
+  width: 51px;*/
+  /*transform: translateX(-10px);*/
+
+/*}
 
 .filterButton svg:hover {
 width: 51px;
-}
+}*/
 
 .filterSearch {
   display: none;
